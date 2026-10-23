@@ -1,26 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Мебельный сайт</title>
+    <title>МебельСофия — мебельный магазин</title>
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <div id="polka_btn" class="card">
-        <div class="card_title">Полка</div>
-        <p class="card_description">Самая лучшая полка</p>
-    </div>
+    <header id="header" class="site-header"></header>
 
-    <div id="shkaf_btn" class="card">
-        <div class="card_title">Шкаф</div>
-        <p class="card_description">Самая лучший шкаф</p>
-    </div>
+    <main>
+        <section class="hero">
+            <p class="kicker">Классическая мебель ручной сборки</p>
+            <h1>Дом, в который хочется возвращаться</h1>
+            <p>Дерево, ткань и спокойные формы. Собираем мебель на собственном производстве и доставляем по всей стране.</p>
+            <a class="btn" href="#catalog">Перейти в каталог</a>
+        </section>
 
-    <div id="backend_btn" class="card">
-        <div class="card_title">Запрос</div>
-        <p id="backend_p" class="card_description">0</p>
-    </div>
-    <script src="index.js"></script>
+        <section id="catalog">
+            <h2>Каталог</h2>
+            <div class="catalog-controls">
+                <input id="search" type="search" placeholder="Поиск по названию...">
+                <select id="sort">
+                    <option value="popular">Сначала популярные</option>
+                    <option value="price-asc">Сначала дешевле</option>
+                    <option value="price-desc">Сначала дороже</option>
+                    <option value="rating">Высокий рейтинг</option>
+                </select>
+            </div>
+            <div id="chips" class="chips"></div>
+            <div id="products" class="product-grid"></div>
+            <div id="empty" class="empty" hidden>
+                <div class="big">🔍</div>
+                <p>Ничего не найдено. Попробуйте изменить запрос или выбрать другую категорию.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer" class="site-footer"></footer>
+    <div id="toast"></div>
+
+    <script src="data.js"></script>
+    <script src="util.js"></script>
+    <script src="catalog.js"></script>
 </body>
 </html>

@@ -1,17 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Мебельный сайт</title>
+    <title>МебельСофия — регистрация</title>
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <input type="text" placeholder="Логин...">
-    <input type="password" placeholder="Пароль...">
-    <button>Регистрация</button>
-
-    <a href="login.html">Уже есть аккаунт?</a>
-    <script src=""></script>
+    <div class="auth-wrap">
+        <div class="auth-card">
+            <h1>Мебель<span style="color: var(--accent);">София</span></h1>
+            <p class="hint">Создайте аккаунт — это займет минуту</p>
+            <input id="login_text" type="text" placeholder="Логин..." autocomplete="username">
+            <input id="password_text" type="password" placeholder="Пароль..." autocomplete="new-password">
+            <input id="password_repeat" type="password" placeholder="Повторите пароль..." autocomplete="new-password">
+            <button id="register_btn" class="btn wide">Регистрация</button>
+            <div id="message" class="message"></div>
+            <a href="login.html">Уже есть аккаунт? Войдите</a>
+        </div>
+    </div>
+    <script src="util.js"></script>
+    <script src="register.js"></script>
 </body>
 </html>

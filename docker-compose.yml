@@ -1,0 +1,18 @@
+services:
+  backend:
+    build: ./backend
+    ports:
+      - "8443:8443"
+    environment:
+      JWT_SECRET: "change-me-in-production"
+      JWT_TTL_MINUTES: "60"
+      # База хранится в томе, чтобы заказы и пользователи переживали пересборку
+      DB_PATH: /app/data/database.db
+    volumes:
+      - db-data:/app/data
+      # Раздача frontend прямо с бэкенда (localhost:8443 открывает сайт).
+      # Если не нужен — удалите эту строку.
+      - ./frontend:/app/frontend:ro
+
+volumes:
+  db-data:

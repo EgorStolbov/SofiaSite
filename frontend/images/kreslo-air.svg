@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f2eadf"/>
+      <stop offset="1" stop-color="#ddcdb8"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="450" fill="url(#bg)"/>
+  <ellipse cx="300" cy="330" rx="150" ry="14" fill="rgba(0,0,0,0.07)"/>
+  <rect x="258" y="140" width="84" height="72" rx="16" fill="#a58a6f"/>
+  <rect x="243" y="216" width="114" height="24" rx="11" fill="#8f6f4e"/>
+  <rect x="294" y="240" width="12" height="42" rx="4" fill="#6f5741"/>
+  <rect x="252" y="284" width="96" height="10" rx="5" fill="#6f5741"/>
+  <circle cx="256" cy="303" r="8" fill="#6f5741"/>
+  <circle cx="300" cy="303" r="8" fill="#6f5741"/>
+  <circle cx="344" cy="303" r="8" fill="#6f5741"/>
+  <text x="300" y="408" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="600" fill="#8a7f74">Кресло компьютерное «Айр» — заглушка</text>
+</svg>
